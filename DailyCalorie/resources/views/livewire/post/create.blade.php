@@ -4,8 +4,8 @@
             <form wire:submit.prevent="store">
                 <div class="form-group">
                     <label>TITLE</label>
-                    <input type="text" wire:model="title" class="form-control @error('title') is-invalid @enderror" placeholder="Masukkan Title">
-                    @error('title')
+                    <input type="text" wire:model="name" class="form-control @error('name') is-invalid @enderror" placeholder="Masukkan Title">
+                    @error('name')
                         <span class="invalid-feedback">
                                 {{ $message }}
                          </span>
@@ -13,8 +13,8 @@
                 </div>
                 <div class="form-group">
                     <label>KONTEN</label>
-                   <textarea wire:model="content" class="form-control @error('content') is-invalid @enderror" rows="4" placeholder="Masukkan Konten"></textarea>
-                   @error('content')
+                   <textarea wire:model="calorie" class="form-control @error('calorie') is-invalid @enderror" rows="4" placeholder="Masukkan Konten"></textarea>
+                   @error('calorie')
                         <span class="invalid-feedback">
                                 {{ $message }}
                          </span>
