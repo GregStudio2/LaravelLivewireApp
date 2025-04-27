@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::livewire('/', 'post.index')->name('post.index');
+Route::livewire('/create', 'post.create')->name('post.create');
+Route::livewire('/edit/{id}', 'post.edit')->name('post.edit');
