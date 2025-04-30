@@ -1,11 +1,11 @@
 <div>
-    <a href="{{ route('calorie.create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
+    <a href="{{ route('calorie.create') }}" class="btn btn-md btn-success mb-3">TAMBAH DATA</a>
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">TITLE</th>
-                <th scope="col">CONTENT</th>
-                <th scope="col">AKSI</th>
+                <th scope="col">NAME</th>
+                <th scope="col">CALORIE</th>
+                <th scope="col">ACTION</th>
             </tr>
         </thead>
         <tbody>
