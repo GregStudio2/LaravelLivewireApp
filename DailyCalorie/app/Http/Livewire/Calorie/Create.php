@@ -7,15 +7,9 @@ use Livewire\Component;
 
 class Create extends Component
 {
-    /**
-     * define public variable
-     */
     public $name;
     public $calorie;
-
-    /**
-     * store function
-     */
+    
     public function store()
     {
         $this->validate([
@@ -28,10 +22,8 @@ class Create extends Component
             'calorie'   => $this->calorie
         ]);
 
-        //flash message
         session()->flash('message', 'Data Berhasil Disimpan.');
 
-        //redirect
         return redirect()->route('calorie.index');
     }
 

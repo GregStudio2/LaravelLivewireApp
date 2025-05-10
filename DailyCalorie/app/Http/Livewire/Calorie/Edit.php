@@ -7,16 +7,10 @@ use Livewire\Component;
 
 class Edit extends Component
 {
-    /**
-    * define public variable
-    */
     public $calorieId;
     public $name;
     public $calorie;
-
-    /**
-     * mount or construct function
-     */
+    
     public function mount($id)
     {
         $calorie = Calorie::find($id);
@@ -27,10 +21,7 @@ class Edit extends Component
             $this->calorie  = $calorie->calorie;
         }
     }
-
-    /**
-     * update function
-     */
+    
     public function update()
     {
         $this->validate([
@@ -50,10 +41,8 @@ class Edit extends Component
             }
         }
 
-        //flash message
         session()->flash('message', 'Data Berhasil Diupdate.');
 
-        //redirect
         return redirect()->route('calorie.index');
     }
 
