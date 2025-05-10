@@ -15,7 +15,7 @@ class CreateCaloriesTable extends Migration
     {
         Schema::create('calories', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->date('date');
             $table->string('calorie');
             $table->timestamps();
         });
